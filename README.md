@@ -20,23 +20,21 @@ The steps described require the following software:
 
 ## Contents
 
+* \[01\_paternity-assignment](#01\_paternity-assignment)
 
+* \[02\_timing-and-synchrony](#02\_timing-and-synchrony)
 
-\* \[01\_paternity-assignment](#01\_paternity-assignment)
+* \[03\_make-full-data-table](#03\_make-full-data-table)
 
-\* \[02\_timing-and-synchrony](#02\_timing-and-synchrony)
+* \[04\_exploratory-plots](#04\_exploratory-plots)
 
-\* \[03\_make-full-data-table](#03\_make-full-data-table)
+* \[05\_distance-intx-categorical](#05\_distance-intx-categorical)
 
-\* \[04\_exploratory-plots](#04\_exploratory-plots)
+* \[06\_explore-temporal-overlap](#06\_explore-temporal-overlap)
 
-\* \[05\_distance-intx-categorical](#05\_distance-intx-categorical)
+* \[07\_between-site-ferts](#07\_between-site-ferts)
 
-\* \[06\_explore-temporal-overlap](#06\_explore-temporal-overlap)
-
-\* \[07\_between-site-ferts](#07\_between-site-ferts)
-
-\* \[08\_within-site-ferts](#08\_between-site-ferts)
+* \[08\_within-site-ferts](#08\_between-site-ferts)
 
 
 
