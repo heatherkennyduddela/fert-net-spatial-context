@@ -1,0 +1,8 @@
+"","male_mass_1","male_throat_avg_bright","male_breast_avg_bright","male_belly_avg_bright","male_vent_avg_bright","male_TS","male_mean_rwl"
+"male_mass_1","1 ","","","","","",""
+"male_throat_avg_bright","-0.09    ","1 ","","","","",""
+"male_breast_avg_bright"," 0.02    "," 0.24    ","1 ","","","",""
+"male_belly_avg_bright","-0.14    "," 0.34*   "," 0.50*** ","1 ","","",""
+"male_vent_avg_bright"," 0.22    "," 0.20    "," 0.37*   "," 0.44**  ","1 ","",""
+"male_TS"," 0.11    "," 0.10    "," 0.07    ","-0.11    ","-0.03    ","1 ",""
+"male_mean_rwl"," 0.17    ","-0.06    ","-0.11    ","-0.25    ","-0.06    "," 0.39**  ","1 "

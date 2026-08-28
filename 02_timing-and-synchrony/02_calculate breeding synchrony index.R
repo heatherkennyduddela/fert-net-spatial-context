@@ -1,0 +1,347 @@
+
+################################################################################
+# Script to calculate site and season long breeding synchrony 
+# for 2022 fertilization network data
+# Heather Kenny-Duddela
+# May 17, 2024
+################################################################################
+
+# Use Kempenaers 1993 breeding synchrony index calculation
+# average percent of females that are [simultaneously] fertile per day during 
+# the breeding season. 0% means completely asynchronous, and 100% means 
+# completely synchronous
+
+
+# For each female, of the days that she is fertile, count up the number of
+# other females that were also fertile that day. Sum over all of the fertile
+# days for female p
+# divide by: the number of fertile days for female p times (total num females -1)
+# Do the above two steps for each female in the population and sum across females
+# Divide by the total number of females in the population
+# multiply by 100 to make it a percentage
+
+# Anticipated work flow
+
+# 1) Create matrix where each row is a female and each column is a day of the breeding
+# season. 
+# 2) Fill each row with 0 and 1, where 0 means the female is not fertile, 
+# and 1 means she is fertile. 
+# 3) Calculate row sums to get the number of days each female was fertile
+# 4) Loop through each female and count up the number of females who were 
+# fertile on the same days she was fertile. Sum across all her fertile days.
+# 5) Multiply number of fertile days by total number of females minus 1
+# 6) Divide the sum from step 4 by the product in step 5
+# 7) Do steps 4-6 for each female and sum across all females
+# 8) Divide the value by the total number of females and multiply by 100
+
+# libraries
+library(tidyverse)
+library(lubridate)
+library(ggplot2)
+
+# load data
+
+# table of 2022 offspring and parents with ci and clutch size for all sites, 2022
+# each row is a kid
+ci.clutch <- read.csv("input-files/nest attempts with female and ci 2022.csv")
+
+# put ci into easy date format
+ci.clutch$ci.ymd <- ymd(ci.clutch$ci)
+
+# make number of eggs numeric
+ci.clutch$eggs.num <- as.integer(ci.clutch$eggs)
+
+# add columns for fertile period start and stop for each nest attempt
+
+# start 7 days before CI
+ci.clutch$fert.start <- ci.clutch$ci.ymd - 7
+
+# end on day penultimate egg is laid. CI plus clutch size minus 2
+# to account for 1st egg and last egg
+ci.clutch$fert.end <- ci.clutch$ci.ymd + (ci.clutch$eggs.num -2)
+
+# make new table with just fert start and stop dates
+fert.dates <- select(ci.clutch, band, site, nest, fert.start, fert.end)
+
+# summarize number of clutches per band number
+# maximum is 3
+clutch.band <- fert.dates %>%
+  group_by(band) %>%
+  summarise(num.clutch = n())
+
+# split into tables for clutches 1, 2, and 3
+dates.ci1 <- fert.dates %>%
+  group_by(band) %>%
+  arrange(band, fert.start) %>%
+  filter(row_number()==1)
+
+dates.ci2 <- fert.dates %>%
+  group_by(band) %>%
+  arrange(band, fert.start) %>%
+  filter(row_number()==2)
+
+dates.ci3 <- fert.dates %>%
+  group_by(band) %>%
+  arrange(band, fert.start) %>%
+  filter(row_number()==3)
+
+# check if there are any bands present in 2 that aren't in 1
+check <- dates.ci2$band %in% dates.ci1$band
+sum(check) # all 53 bands in 2 are also in 1
+
+# rename columns
+colnames(dates.ci1)[3:5] <- c("nest1", "fert.start1","fert.end1")
+colnames(dates.ci2)[3:5] <- c("nest2", "fert.start2","fert.end2")
+colnames(dates.ci3)[3:5] <- c("nest3", "fert.start3","fert.end3")
+
+# combine into table with one row per female
+fert.female <- left_join(dates.ci1, dates.ci2, by=c("band","site"))
+fert.female2 <- left_join(fert.female, dates.ci3, by=c("band","site"))
+
+# remove rows with NA
+fert.female2.2 <- subset(fert.female2, !is.na(fert.female2$fert.end1))
+
+fert.female3 <- fert.female2.2 %>% arrange(band)
+
+# also add julian days
+fert.female3$fert.start1.jul <- yday(fert.female3$fert.start1)
+fert.female3$fert.end1.jul <- yday(fert.female3$fert.end1)
+fert.female3$fert.start2.jul <- yday(fert.female3$fert.start2)
+fert.female3$fert.end2.jul <- yday(fert.female3$fert.end2)
+fert.female3$fert.start3.jul <- yday(fert.female3$fert.start3)
+fert.female3$fert.end3.jul <- yday(fert.female3$fert.end3)
+
+# save this table
+write.csv(fert.female3, "02_output-files/fert start end each female each nest.csv",
+          row.names = F)
+
+
+### Make matrix for whole breeding season
+
+# find earliest and latest fertile dates
+min(fert.dates$fert.start, na.rm=T) # "2022-05-04, Julian 124"
+max(fert.dates$fert.end, na.rm=T) # "2022-08-12, Julian 224"
+# number of days for fertile range
+max(fert.dates$fert.end, na.rm=T) - min(fert.dates$fert.start, na.rm=T) # 100
+
+# make empty matrix
+season.mat <- as.data.frame(matrix(nrow=67, ncol=101, NA))
+row.names(season.mat) <- c("date",fert.female3$band)
+
+
+# add dates
+season.mat[1,] <- seq(124,224, by=1)
+
+# fill matrix with 0
+season.mat[2:67,] <- 0
+
+# loop to fill rows for fertile periods
+
+# for each band in fert.female3
+for (i in 1:66) {
+  # figure out columns that equal 1
+  col.num <- season.mat[1,] >= fert.female3$fert.start1.jul[i] &
+    season.mat[1,] <= fert.female3$fert.end1.jul[i] |
+    season.mat[1,] >= fert.female3$fert.start2.jul[i] &
+    season.mat[1,] <= fert.female3$fert.end2.jul[i] |
+    season.mat[1,] >= fert.female3$fert.start3.jul[i] &
+    season.mat[1,] <= fert.female3$fert.end3.jul[i] 
+  # fill in those column with 1 for corresponding row
+  season.mat[(i+1), which(col.num==T)] <- 1
+  
+}
+
+# calculate row sums to make sure each female has some fertile days
+row.sum <- rowSums(season.mat[2:67,])
+season.mat.sum <- cbind(c(NA,row.sum),season.mat)
+
+# calculate column sums to see how many females are fertile each day
+col.sum <- as.data.frame(colSums(season.mat[2:67,]))
+colnames(col.sum)[1] <- "fert.per.day"
+col.sum$jday <- as.vector(season.mat[1,])
+
+ggplot(col.sum, aes(x=as.numeric(jday), y=as.numeric(fert.per.day))) + 
+  geom_point() + geom_line() + 
+  xlab("Julian day") + ylab("Number of fertile females") +
+  ggtitle("Number of fertile females by day 2022 all sites")
+
+ggsave("02_output-files/fertile females by day plot 2022 all sites.png")
+
+
+# table for fertile days per female
+fert.day.per.female <- as.data.frame(season.mat.sum[2:67,1])
+fert.day.per.female$band <- row.names(season.mat.sum)[2:67]
+colnames(fert.day.per.female)[1] <- "fert.days"
+
+# For each female, sum up the number of other females that were fertile
+# at the same time as her
+
+# add storage column
+fert.day.per.female$other.fem.tot <- NA
+
+# loop through each female
+# find the days (columns) where she was fertile
+# sum up number of other females fertile on those days
+
+for (i in 1:length(fert.day.per.female$band)) {
+  # fertile dates for focal female
+  dates <- which(season.mat[(i+1), ] == 1)
+  # number of other females fertile on those days
+  # exclude first row (julian days), and focal female row
+  other.fem.by.day <- colSums(season.mat[-c(1, i+1), dates])
+  # sum across all fertile days
+  other.fem.tot <- sum(other.fem.by.day)
+  # save result
+  fert.day.per.female$other.fem.tot[i] <- other.fem.tot
+}
+
+ggplot(fert.day.per.female, aes(x=other.fem.tot)) + geom_histogram()
+
+# add column for number of fertile days times total number of females minus 1
+# this represents the highest possible synchrony, if all other females were
+# fertile on the same days as the focal female
+fert.day.per.female$denominator <- fert.day.per.female$fert.days * (66-1)
+
+# standardize by dividing the observed tot females by the denominator
+fert.day.per.female$standardized <- fert.day.per.female$other.fem.tot/
+  fert.day.per.female$denominator
+
+ggplot(fert.day.per.female, aes(x=standardized)) + 
+  geom_histogram(fill="lightblue", color="black") +
+  xlab("Individual female synchrony score (population level)") +
+  ggtitle("2022 individual female synchrony \nat the population level")
+
+ggsave("02_output-files/hist of individual synchrony at pop level.png")
+
+# sum the standardized value across all females, divide by total # female,
+# then multiply by 100
+
+SI <- (sum(fert.day.per.female$standardized)/66)*100 # 21.83
+
+################################################################################
+# Calculate site-level average from pop-level synchrony
+
+# add site to fert.day.per.female
+fert.day.per.female2 <- left_join(fert.day.per.female, 
+                                  fert.female3[,1:2], by="band")
+
+# add column for individual SI in percent form
+fert.day.per.female2$indiv.pop.SI <- fert.day.per.female2$standardized*100
+
+# save individual population level synchrony values
+write.csv(fert.day.per.female2, "02_output-files/individual pop level SI 2022.csv", row.names=F)
+
+# summarize at site level
+mean.popSI.by.site <- fert.day.per.female2 %>%
+  group_by(site) %>%
+  summarise(meanSI = mean(standardized)*100)
+
+
+################################################################################
+# Modify the workflow to calculate site level synchrony
+
+# add site to the season matrix
+# first add band column
+season.mat.sum$band <- row.names(season.mat)
+# left join to add site
+season.mat.sum.site <- left_join(season.mat.sum, fert.female3[,1:2], by="band")
+# move band and site to beginning of matrix
+season.mat.site <- cbind(season.mat.sum.site[,103:104], season.mat.sum.site[,1:102])
+
+
+# identify solitary sites
+multi.sites <- season.mat.site %>%
+  group_by(site) %>%
+  summarise(num.f = n())
+
+multi.sites.only <- subset(multi.sites, multi.sites$num.f > 1)
+
+# remove solitary sites from season matrix
+season.mat.multi.site <- subset(season.mat.site, season.mat.site$site %in%
+                                  multi.sites.only$site)
+colnames(season.mat.multi.site)[3] <- "fert.days"
+
+
+# save season.mat.multi.site table for later use in dyad analysis
+# include row of dates here
+season.mat.multi.site.save <- subset(season.mat.site, season.mat.site$site %in%
+                                  multi.sites.only$site |
+                                  is.na(season.mat.site$site))
+colnames(season.mat.multi.site.save)[3] <- "fert.days"
+write.csv(season.mat.multi.site.save, 
+          file="02_output-files/season matrix multi sites.csv",
+          row.names = F)
+
+
+# loop through each site and calculate breeding synchrony index
+
+# make storage column for site level synchrony index
+multi.sites.only$SI <- NA
+
+# make female level storage for site SI
+site.storage.out <- as.data.frame(matrix(ncol=6, nrow=1, NA))
+colnames(site.storage.out) <- c("band","site","fert.days","other.fem.tot",
+                            "denominator","standardized")
+
+
+for (i in 1:length(multi.sites.only$site)) {
+  # make table for site
+  site <- subset(season.mat.multi.site, season.mat.multi.site$site ==
+                   multi.sites.only$site[i])
+  # make internal storage
+  site.storage.in <- as.data.frame(matrix(ncol=6, nrow=length(site$band), NA))
+  colnames(site.storage.in) <- c("band","site","fert.days","other.fem.tot",
+                                  "denominator","standardized")
+  # loop through females within the site
+  for (j in 1:length(site$band)) {
+    # fertile dates for focal female
+    dates <- which(site[j, ] == 1)
+    # number of other females fertile on those days
+    # exclude first row (julian days), and focal female row
+    other.fem.by.day <- colSums(site[-j, dates])
+    # sum across all fertile days
+    other.fem.tot <- sum(other.fem.by.day)
+    # save result
+    site.storage.in[j, 1:3] <- site[j, 1:3]
+    site.storage.in$other.fem.tot[j] <- other.fem.tot
+  }
+  # calculate denominator and standardized for site
+  site.storage.in$denominator <- site.storage.in$fert.days * (length(site$band)-1)
+  site.storage.in$standardized <- site.storage.in$other.fem.tot / 
+    site.storage.in$denominator
+  
+  # save internal site storage
+  site.storage.out <- rbind(site.storage.out, site.storage.in)
+  
+  # calculate site SI and save
+  site.SI <- (sum(site.storage.in$standardized)/length(site$band))*100
+  
+  multi.sites.only$SI[i] <- site.SI
+}
+
+# add site level calculation to mean pop level table
+pop.and.siteSI <- left_join(mean.popSI.by.site, multi.sites.only, by="site")
+
+# clarify column names
+colnames(pop.and.siteSI)[c(2,4)] <- c("mean.pop.by.site.SI", "site.SI")
+
+# save SI for each site
+write.csv(pop.and.siteSI, "02_output-files/site level SI 2022.csv", row.names=F)
+
+ggplot(subset(site.storage.out, site.storage.out$site == "Blue Cloud" |
+                site.storage.out$site=="CHR" |
+                site.storage.out$site == "Cooks" |
+                site.storage.out$site == "Make Believe"), 
+       aes(x=standardized, fill=site)) + geom_histogram(color="black") +
+  facet_grid(site~.) +
+  xlab("Site level synchrony scores for individual females") +
+  ggtitle("2022 individual female synchrony score \nat the site level")
+
+ggsave("02_output-files/hist of site level synchrony for indiv females.png")
+
+# compare average pop SI to site-level SI
+ggplot(pop.and.siteSI, aes(x=mean.pop.by.site.SI, y=site.SI)) +
+  geom_point()
+
+
+

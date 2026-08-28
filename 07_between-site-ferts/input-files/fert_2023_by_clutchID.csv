@@ -1,0 +1,82 @@
+"clutchID_ind2","band_dad","band_mom","site_dad","site_ind2","FamilyID_dad","FamilyID_mom","FamilyID_ind2","site_type","brood_ind2","fert","fert_type","clutch_size"
+"Blue Cloud_14_1","2850-57614","2850-57871","Blue Cloud","Blue Cloud","BlueCloud-22","BlueCloud-22","BlueCloud-22","medium","1",2,"wp",2
+"Blue Cloud_18.2_1",NA,"2850-57869",NA,"Blue Cloud",NA,"BlueCloud-18","BlueCloud-18","medium","1",4,"ep_unsampled",4
+"Blue Cloud_18_collected","2640-97548","2850-57869","Blue Cloud","Blue Cloud","BlueCloud-18","BlueCloud-18","BlueCloud-18","medium","collected",2,"wp",4
+"Blue Cloud_18_collected","2850-57901","2850-57869","Blue Cloud","Blue Cloud","BlueCloud-06","BlueCloud-18","BlueCloud-18","medium","collected",2,"ep_same",4
+"Blue Cloud_1_1","2850-57947","2850-57946","Blue Cloud","Blue Cloud","Nixon-01","Nixon-01","Nixon-01","medium","1",4,"wp",4
+"Blue Cloud_22_collected","2850-57901","2850-57871","Blue Cloud","Blue Cloud","BlueCloud-06","BlueCloud-22","BlueCloud-22","medium","collected",3,"ep_same",3
+"Blue Cloud_4.2_1","2850-57659","2850-57928","Blue Cloud","Blue Cloud","BlueCloud-04","BlueCloud-04","BlueCloud-04","medium","1",4,"wp",4
+"Blue Cloud_6.2_1","2640-97548","2850-57572","Blue Cloud","Blue Cloud","BlueCloud-18","BlueCloud-06","BlueCloud-06","medium","1",1,"ep_same",6
+"Blue Cloud_6.2_1","2850-57901","2850-57572","Blue Cloud","Blue Cloud","BlueCloud-06","BlueCloud-06","BlueCloud-06","medium","1",5,"wp",6
+"Blue Cloud_6_collected","2850-57901","2850-57572","Blue Cloud","Blue Cloud","BlueCloud-06","BlueCloud-06","BlueCloud-06","medium","collected",2,"wp",2
+"Boyer_13.2_1","2870-64906","2850-57685","Boyer","Boyer","Boyer-09","Boyer-05","Boyer-05","medium","1",2,"ep_same",2
+"Boyer_13_collected","2850-57686","2850-57688","Boyer","Boyer","Boyer-13","Boyer-13","Boyer-13","medium","collected",5,"wp",5
+"Boyer_14.2_1","2850-57935","2870-65015","Boyer","Boyer","Boyer-14","Boyer-14","Boyer-14","medium","1",2,"wp",2
+"Boyer_14_collected","2850-57935","2870-65015","Boyer","Boyer","Boyer-14","Boyer-14","Boyer-14","medium","collected",4,"wp",4
+"Boyer_15_1","2850-57686","2850-57688","Boyer","Boyer","Boyer-13","Boyer-13","Boyer-13","medium","1",3,"wp",3
+"Boyer_16_2","2850-57686","2850-57685","Boyer","Boyer","Boyer-05","Boyer-05","Boyer-05","medium","2",2,"wp",4
+"Boyer_16_2","2870-65016","2850-57685","Boyer","Boyer","Boyer-03","Boyer-05","Boyer-05","medium","2",1,"ep_same",4
+"Boyer_16_2",NA,"2850-57685",NA,"Boyer",NA,"Boyer-05","Boyer-05","medium","2",1,"ep_unsampled",4
+"Boyer_2.2_1","2870-65014","2850-57687","Boyer","Boyer","Boyer-02","Boyer-02","Boyer-02","medium","1",1,"wp",1
+"Boyer_2.3_2",NA,"2850-57687",NA,"Boyer",NA,"Boyer-02","Boyer-02","medium","2",3,"ep_unsampled",3
+"Boyer_2_collected","2850-57686","2850-57687","Boyer","Boyer","Boyer-13","Boyer-02","Boyer-02","medium","collected",2,"ep_same",4
+"Boyer_2_collected","2870-65014","2850-57687","Boyer","Boyer","Boyer-02","Boyer-02","Boyer-02","medium","collected",2,"wp",4
+"Boyer_3.2_1","2870-65016","2850-57934","Boyer","Boyer","Boyer-03","Boyer-03","Boyer-03","medium","1",1,"wp",3
+"Boyer_3.2_1",NA,"2850-57934",NA,"Boyer",NA,"Boyer-03","Boyer-03","medium","1",2,"ep_unsampled",3
+"Boyer_3_collected","2870-65016","2850-57934","Boyer","Boyer","Boyer-03","Boyer-03","Boyer-03","medium","collected",4,"wp",4
+"Boyer_4_2","2850-57953","2850-57934","Cathys","Boyer","Cathys-01","Boyer-03","Boyer-03","medium","2",3,"ep_diff",3
+"Boyer_5_collected","2850-57686","2850-57685","Boyer","Boyer","Boyer-05","Boyer-05","Boyer-05","medium","collected",5,"wp",5
+"Boyer_9.2_1","2870-64906","2811-06861","Boyer","Boyer","Boyer-09","Boyer-09","Boyer-09","medium","1",4,"wp",5
+"Boyer_9.2_1",NA,"2811-06861",NA,"Boyer",NA,"Boyer-09","Boyer-09","medium","1",1,"ep_unsampled",5
+"Boyer_9_collected","2870-64906","2811-06861","Boyer","Boyer","Boyer-09","Boyer-09","Boyer-09","medium","collected",5,"wp",5
+"Cathys_1_1","2850-57953","2850-57954","Cathys","Cathys","Cathys-01","Cathys-01","Cathys-01","solitary","1",4,"wp",4
+"Cathys_2_2","2850-57953","2850-57954","Cathys","Cathys","Cathys-01","Cathys-01","Cathys-01","solitary","2",2,"wp",2
+"Cooks_17.2_2",NA,"2850-57948",NA,"Cooks",NA,"Cooks-15","Cooks-15","medium","2",3,"ep_unsampled",3
+"Cooks_17_1","2811-83118","2850-57948","Cooks","Cooks","Cooks-15","Cooks-15","Cooks-15","medium","1",4,"wp",5
+"Cooks_17_1",NA,"2850-57948",NA,"Cooks",NA,"Cooks-15","Cooks-15","medium","1",1,"ep_unsampled",5
+"Cooks_18_collected",NA,"2850-57932",NA,"Cooks",NA,"Cooks-18","Cooks-18","medium","collected",4,"ep_unsampled",4
+"Cooks_29_collected","2850-57638","2850-57853","Cooks","Cooks","Cooks-29","Cooks-29","Cooks-29","medium","collected",3,"wp",4
+"Cooks_29_collected",NA,"2850-57853",NA,"Cooks",NA,"Cooks-29","Cooks-29","medium","collected",1,"ep_unsampled",4
+"Cooks_2_collected","2850-57574","2850-57931","Cooks","Cooks","Cooks-02","Cooks-02","Cooks-02","medium","collected",3,"wp",6
+"Cooks_2_collected","2850-57638","2850-57931","Cooks","Cooks","Cooks-29","Cooks-02","Cooks-02","medium","collected",2,"ep_same",6
+"Cooks_2_collected",NA,"2850-57931",NA,"Cooks",NA,"Cooks-02","Cooks-02","medium","collected",1,"ep_unsampled",6
+"Cooks_36.2_2","2850-57642","2850-57575","Cooks","Cooks","Cooks-04","Cooks-04","Cooks-04","medium","2",2,"wp",4
+"Cooks_36.2_2",NA,"2850-57575",NA,"Cooks",NA,"Cooks-04","Cooks-04","medium","2",2,"ep_unsampled",4
+"Cooks_36_1","2850-57642","2850-57575","Cooks","Cooks","Cooks-04","Cooks-04","Cooks-04","medium","1",5,"wp",5
+"Cooks_4.2_1","2850-57772","2850-57771","Cooks","Cooks","Cooks-02.2","Cooks-04.2","Cooks-04.2","medium","1",1,"ep_same",3
+"Cooks_4.2_1",NA,"2850-57771",NA,"Cooks",NA,"Cooks-04.2","Cooks-04.2","medium","1",2,"ep_unsampled",3
+"Cooks_4_collected","2850-57574","2850-57575","Cooks","Cooks","Cooks-02","Cooks-04","Cooks-04","medium","collected",3,"ep_same",5
+"Cooks_4_collected","2850-57642","2850-57575","Cooks","Cooks","Cooks-04","Cooks-04","Cooks-04","medium","collected",2,"wp",5
+"Jays_1.2_2","2811-83229","2850-57952","Jays","Jays","Jays-01","Jays-01","Jays-01","solitary","2",3,"wp",3
+"Jays_1_1","2811-83229","2850-57952","Jays","Jays","Jays-01","Jays-01","Jays-01","solitary","1",2,"wp",5
+"Jays_1_1","2850-57967","2850-57952","Green Mill","Jays","none","Jays-01","Jays-01","solitary","1",3,"ep_diff",5
+"Karens_1_1","2850-57677","2850-57956","Karens","Karens","Karens-01","Karens-01","Karens-01","solitary","1",5,"wp",5
+"Make Believe_17_collected","2850-57877","2870-65019","Make Believe","Make Believe","MakeBelieve-31","MakeBelieve-17","MakeBelieve-17","medium","collected",1,"ep_same",1
+"Make Believe_31_collected","2850-57877","2850-57878","Make Believe","Make Believe","MakeBelieve-31","MakeBelieve-31","MakeBelieve-31","medium","collected",4,"wp",4
+"Make Believe_34_collected","2850-57518","2850-57938","Make Believe","Make Believe","MakeBelieve-69","MakeBelieve-34","MakeBelieve-34","medium","collected",2,"ep_same",3
+"Make Believe_34_collected",NA,"2850-57938",NA,"Make Believe",NA,"MakeBelieve-34","MakeBelieve-34","medium","collected",1,"ep_unsampled",3
+"Make Believe_69_collected","2850-57518","2850-57941","Make Believe","Make Believe","MakeBelieve-69","MakeBelieve-69","MakeBelieve-69","medium","collected",5,"wp",5
+"Make Believe_70.3_2","2350-21085","2850-57878","Make Believe","Make Believe","MakeBelieve-70.3","MakeBelieve-70.3","MakeBelieve-70.3","medium","2",2,"wp",2
+"Make Believe_70_collected","2350-21085","2640-97596","Make Believe","Make Believe","MakeBelieve-70","MakeBelieve-70","MakeBelieve-70","medium","collected",5,"wp",5
+"Make Believe_72_1","2850-57518","2850-57941","Make Believe","Make Believe","MakeBelieve-69","MakeBelieve-69","MakeBelieve-69","medium","1",3,"wp",3
+"Make Believe_74.2_1","2850-57937","2850-57939","Make Believe","Make Believe","MakeBelieve-74","MakeBelieve-74","MakeBelieve-74","medium","1",2,"wp",4
+"Make Believe_74.2_1",NA,"2850-57939",NA,"Make Believe",NA,"MakeBelieve-74","MakeBelieve-74","medium","1",2,"ep_unsampled",4
+"Make Believe_74_collected","2850-57937","2850-57939","Make Believe","Make Believe","MakeBelieve-74","MakeBelieve-74","MakeBelieve-74","medium","collected",4,"wp",4
+"Make Believe_8_2","2850-57937","2850-57939","Make Believe","Make Believe","MakeBelieve-74","MakeBelieve-74","MakeBelieve-74","medium","2",5,"wp",5
+"Plumbumpy_1_1","2850-57944","2850-57945","Plumbumpy","Plumbumpy","Plum-01","Plum-01","Plum-01","solitary","1",5,"wp",5
+"Red Wagon_1_1","2850-57977","2850-57978","Red Wagon","Red Wagon","RedWagon-01","RedWagon-01","RedWagon-01","solitary","1",1,"wp",1
+"Speedwell_1.2_2","2850-57949","2850-57950","Speedwell","Speedwell","Speedwell-01","Speedwell-01","Speedwell-01","solitary","2",3,"wp",3
+"Speedwell_1_1","2850-57949","2850-57950","Speedwell","Speedwell","Speedwell-01","Speedwell-01","Speedwell-01","solitary","1",3,"wp",4
+"Speedwell_1_1",NA,"2850-57950",NA,"Speedwell",NA,"Speedwell-01","Speedwell-01","solitary","1",1,"ep_unsampled",4
+"Struthers_23_1","2850-57684","2850-57943","Struthers","Struthers","Struthers-23","Struthers-23","Struthers-23","small","1",2,"wp",2
+"Struthers_24_1","2850-57552","2850-57551","Struthers","Struthers","Struthers-24","Struthers-24","Struthers-24","small","1",3,"wp",4
+"Struthers_24_1","2850-57659","2850-57551","Blue Cloud","Struthers","BlueCloud-04","Struthers-24","Struthers-24","small","1",1,"ep_diff",4
+"Struthers_25_2","2850-57552","2850-57551","Struthers","Struthers","Struthers-24","Struthers-24","Struthers-24","small","2",2,"wp",3
+"Struthers_25_2","2850-57674","2850-57551","Struthers","Struthers","Struthers-03","Struthers-24","Struthers-24","small","2",1,"ep_same",3
+"Struthers_3_1","2850-57674","2850-57683","Struthers","Struthers","Struthers-03","Struthers-03","Struthers-03","small","1",3,"wp",3
+"Struthers_5_2","2850-57674","2850-57683","Struthers","Struthers","Struthers-03","Struthers-03","Struthers-03","small","2",3,"wp",3
+"Urban Farm Girlz_5_1","2850-57765","2850-57629","Urban Farm Girlz","Urban Farm Girlz","UrbanFarm-05","UrbanFarm-05","UrbanFarm-05","small","2",1,"wp",1
+"Urban Farm Girlz_7_2","2850-57643","2850-57608","Urban Farm Girlz","Urban Farm Girlz","UrbanFarm-07","UrbanFarm-07","UrbanFarm-07","small","2",4,"wp",4
+"Urban Farm Girlz_8.2_2","2850-57643","2850-57764","Urban Farm Girlz","Urban Farm Girlz","UrbanFarm-07","UrbanFarm-08","UrbanFarm-08","small","2",2,"ep_same",3
+"Urban Farm Girlz_8.2_2",NA,"2850-57764",NA,"Urban Farm Girlz",NA,"UrbanFarm-08","UrbanFarm-08","small","2",1,"ep_unsampled",3
+"Urban Farm Girlz_8_1",NA,"2850-57629",NA,"Urban Farm Girlz",NA,"UrbanFarm-05","UrbanFarm-05","small","1",4,"ep_unsampled",4

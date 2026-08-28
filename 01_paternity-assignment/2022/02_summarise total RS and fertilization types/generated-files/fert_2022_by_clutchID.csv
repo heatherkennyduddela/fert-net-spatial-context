@@ -1,0 +1,141 @@
+"clutch_id_ind2","Band_dad","Band_mom","Site_dad","Site_mom","FamilyID_dad","FamilyID_mom","brood","site_type","fert","fert_type","clutch_size","site_size_dad","site_size_mom"
+"Blue Cloud_14_2","2850-57614","2850-57871","Blue Cloud","Blue Cloud","BlueCloud-22","BlueCloud-22",2,"medium",3,"wp",4,7,7
+"Blue Cloud_14_2","2850-57901","2850-57871","Blue Cloud","Blue Cloud","BlueCloud-05","BlueCloud-22",2,"medium",1,"ep_same",4,7,7
+"Blue Cloud_17_2","2850-57659","2850-57869","Blue Cloud","Blue Cloud","BlueCloud-04","BlueCloud-04",2,"medium",2,"wp",4,7,7
+"Blue Cloud_17_2","2850-57679","2850-57869","Starlight","Blue Cloud","none","BlueCloud-04",2,"medium",1,"ep_diff",4,3,7
+"Blue Cloud_17_2","2850-57901","2850-57869","Blue Cloud","Blue Cloud","BlueCloud-05","BlueCloud-04",2,"medium",1,"ep_same",4,7,7
+"Blue Cloud_18_1","2640-97548","2850-57612","Blue Cloud","Blue Cloud","BlueCloud-18","BlueCloud-18",1,"medium",5,"wp",5,7,7
+"Blue Cloud_19_1","2850-57565","2850-57870","Blue Cloud","Blue Cloud","BlueCloud-19","BlueCloud-19",1,"medium",1,"wp",1,7,7
+"Blue Cloud_21_2","2640-97548","2850-57612","Blue Cloud","Blue Cloud","BlueCloud-18","BlueCloud-18",2,"medium",4,"wp",5,7,7
+"Blue Cloud_21_2","2850-57565","2850-57612","Blue Cloud","Blue Cloud","BlueCloud-19","BlueCloud-18",2,"medium",1,"ep_same",5,7,7
+"Blue Cloud_22_1","2850-57614","2850-57871","Blue Cloud","Blue Cloud","BlueCloud-22","BlueCloud-22",1,"medium",2,"wp",2,7,7
+"Blue Cloud_24_2","2850-57565","2850-57870","Blue Cloud","Blue Cloud","BlueCloud-19","BlueCloud-19",2,"medium",5,"wp",5,7,7
+"Blue Cloud_4_1","2850-57751","2850-57869","Jay's","Blue Cloud","Jays-01","BlueCloud-04",1,"medium",2,"ep_diff",2,1,7
+"Blue Cloud_5_1","2850-57901","2850-57572","Blue Cloud","Blue Cloud","BlueCloud-05","BlueCloud-05",1,"medium",1,"wp",1,7,7
+"Blue Cloud_5_2","2850-57901","2850-57572","Blue Cloud","Blue Cloud","BlueCloud-05","BlueCloud-05",2,"medium",4,"wp",4,7,7
+"Boyer's_5_2","2850-57689","2850-57685","Boyer","Boyer","Boyer-05-07","Boyer-05-07",2,"medium",2,"wp",2,5,5
+"Boyer's_7_2","2850-57686","2850-57688","Boyer","Boyer","Boyer-05-07","Boyer-05-07",2,"medium",5,"wp",5,5,5
+"CHR_101_2","2850-57733",NA,"CHR",NA,"CHR-011",NA,2,"large",4,"mom_unk",4,32,NA
+"CHR_102.2_2","2640-97589","2811-38984","CHR","CHR","CHR-102","CHR-102",2,"large",4,"wp",4,32,32
+"CHR_102_1","2640-97589","2811-38984","CHR","CHR","CHR-102","CHR-102",1,"large",3,"wp",3,32,32
+"CHR_110_1","2850-57742","2850-57846","CHR","CHR","CHR-110","CHR-110",1,"large",4,"wp",4,32,32
+"CHR_112.2_2","2850-57646","2850-57879","CHR","CHR","CHR-054","CHR-112",2,"large",1,"ep_same",4,32,32
+"CHR_112.2_2",NA,"2850-57879",NA,"CHR",NA,"CHR-112",2,"large",3,"dad_unk",4,NA,32
+"CHR_112_1","2850-57647","2850-57879","CHR","CHR","CHR-112","CHR-112",1,"large",2,"wp",4,32,32
+"CHR_112_1",NA,"2850-57879",NA,"CHR",NA,"CHR-112",1,"large",2,"dad_unk",4,NA,32
+"CHR_119_2","2850-57806","2850-57735","CHR","CHR","CHR-037","CHR-037",2,"large",2,"wp",2,32,32
+"CHR_128_1","2850-57577","2870-65003","CHR","CHR","CHR-128","CHR-128",1,"large",4,"wp",4,32,32
+"CHR_133_1","2870-64907","2850-57648","CHR","CHR","none","CHR-133",1,"large",1,"ep_same",1,32,32
+"CHR_148_2","2850-57582","2870-64909","CHR","CHR","CHR-148","CHR-148",2,"large",4,"wp",4,32,32
+"CHR_150_2","2850-57577","2870-65003","CHR","CHR","CHR-128","CHR-128",2,"large",1,"wp",1,32,32
+"CHR_151_2","2850-57570","2850-57648","CHR","CHR","CHR-133","CHR-133",2,"large",2,"wp",3,32,32
+"CHR_151_2",NA,"2850-57648",NA,"CHR",NA,"CHR-133",2,"large",1,"dad_unk",3,NA,32
+"CHR_16_2","2850-57581","2850-57652","CHR","CHR","CHR-066","CHR-066",2,"large",4,"wp",4,32,32
+"CHR_19_2","2850-57589","2850-57583","CHR","CHR","CHR-097","CHR-097",2,"large",4,"wp",4,32,32
+"CHR_25_1","2850-57733","2850-57650","CHR","CHR","CHR-011","CHR-025",1,"large",1,"ep_same",4,32,32
+"CHR_25_1","2850-57808","2850-57650","CHR","CHR","CHR-029","CHR-025",1,"large",1,"ep_same",4,32,32
+"CHR_25_1","2850-57881","2850-57650","CHR","CHR","CHR-025","CHR-025",1,"large",2,"wp",4,32,32
+"CHR_27_2","2850-57587","2640-97331","CHR","CHR","none","CHR-029",2,"large",1,"ep_same",4,32,32
+"CHR_27_2","2850-57808","2640-97331","CHR","CHR","CHR-029","CHR-029",2,"large",3,"wp",4,32,32
+"CHR_29_1","2640-97588","2640-97331","CHR","CHR","CHR-093","CHR-029",1,"large",2,"ep_same",4,32,32
+"CHR_29_1","2850-57808","2640-97331","CHR","CHR","CHR-029","CHR-029",1,"large",2,"wp",4,32,32
+"CHR_32_1","2850-57731","2640-97358","CHR","CHR","CHR-032","CHR-032",1,"large",4,"wp",5,32,32
+"CHR_32_1","2850-57808","2640-97358","CHR","CHR","CHR-029","CHR-032",1,"large",1,"ep_same",5,32,32
+"CHR_32_3","2850-57731","2640-97358","CHR","CHR","CHR-032","CHR-032",3,"large",2,"wp",2,32,32
+"CHR_37_1","2850-57806","2850-57735","CHR","CHR","CHR-037","CHR-037",1,"large",1,"wp",3,32,32
+"CHR_37_1","2850-57808","2850-57735","CHR","CHR","CHR-029","CHR-037",1,"large",2,"ep_same",3,32,32
+"CHR_39_1","2850-57620","2850-57649","CHR","CHR","CHR-039","CHR-039",1,"large",4,"wp",4,32,32
+"CHR_39_2","2850-57620","2850-57649","CHR","CHR","CHR-039","CHR-039",2,"large",4,"wp",4,32,32
+"CHR_43_1","2850-57567","2850-57736","CHR","CHR","CHR-043","CHR-043",1,"large",5,"wp",5,32,32
+"CHR_45_2","2850-57889","2850-57588","Mayas","CHR","none","CHR-045",2,"large",2,"ep_diff",4,9,32
+"CHR_45_2",NA,"2850-57588",NA,"CHR",NA,"CHR-045",2,"large",2,"dad_unk",4,NA,32
+"CHR_4_1","2850-57581","2850-57585","CHR","CHR","CHR-066","CHR-004",1,"large",2,"ep_same",3,32,32
+"CHR_4_1","2850-57806","2850-57585","CHR","CHR","CHR-037","CHR-004",1,"large",1,"ep_same",3,32,32
+"CHR_4_2","2811-83208","2850-57585","CHR","CHR","CHR-004","CHR-004",2,"large",1,"wp",2,32,32
+"CHR_4_2","2850-57581","2850-57585","CHR","CHR","CHR-066","CHR-004",2,"large",1,"ep_same",2,32,32
+"CHR_52_2","2850-57742","2850-57846","CHR","CHR","CHR-110","CHR-110",2,"large",1,"wp",2,32,32
+"CHR_52_2",NA,"2850-57846",NA,"CHR",NA,"CHR-110",2,"large",1,"dad_unk",2,NA,32
+"CHR_58_1","2850-57808","2850-57571","CHR","CHR","CHR-029","CHR-058",1,"large",3,"ep_same",4,32,32
+"CHR_58_1","2850-57880","2850-57571","CHR","CHR","CHR-139","CHR-058",1,"large",1,"ep_same",4,32,32
+"CHR_66_1","2850-57733","2850-57652","CHR","CHR","CHR-011","CHR-066",1,"large",2,"ep_same",2,32,32
+"CHR_6_2","2850-57581","2850-57746","CHR","CHR","CHR-066","CHR-074",2,"large",2,"ep_same",4,32,32
+"CHR_6_2","2850-57582","2850-57746","CHR","CHR","CHR-074","CHR-074",2,"large",1,"wp",4,32,32
+"CHR_6_2",NA,"2850-57746",NA,"CHR",NA,"CHR-074",2,"large",1,"dad_unk",4,NA,32
+"CHR_73_1","2850-57577","2850-57670","CHR","CHR","CHR-128","CHR-073",1,"large",1,"ep_same",5,32,32
+"CHR_73_1","2850-57671","2850-57670","CHR","CHR","CHR-073","CHR-073",1,"large",4,"wp",5,32,32
+"CHR_74_1","2850-57582","2850-57746","CHR","CHR","CHR-074","CHR-074",1,"large",2,"wp",3,32,32
+"CHR_74_1",NA,"2850-57746",NA,"CHR",NA,"CHR-074",1,"large",1,"dad_unk",3,NA,32
+"CHR_78_1","2640-97589","2850-57656","CHR","CHR","CHR-102","CHR-078",1,"large",3,"ep_same",5,32,32
+"CHR_78_1","2850-57744","2850-57656","CHR","CHR","CHR-078","CHR-078",1,"large",2,"wp",5,32,32
+"CHR_80_1","2850-57580","2850-57654","CHR","CHR","CHR-080","CHR-080",1,"large",2,"wp",4,32,32
+"CHR_80_1","2850-57589","2850-57654","CHR","CHR","CHR-097","CHR-080",1,"large",1,"ep_same",4,32,32
+"CHR_80_1","2850-57733","2850-57654","CHR","CHR","CHR-011","CHR-080",1,"large",1,"ep_same",4,32,32
+"CHR_93_1","2640-97588","2850-57730","CHR","CHR","CHR-093","CHR-093",1,"large",5,"wp",5,32,32
+"CHR_93_2","2640-97588","2850-57730","CHR","CHR","CHR-093","CHR-093",2,"large",2,"wp",4,32,32
+"CHR_93_2","2850-57653","2850-57730","CHR","CHR","CHR-045","CHR-093",2,"large",1,"ep_same",4,32,32
+"CHR_93_2",NA,"2850-57730",NA,"CHR",NA,"CHR-093",2,"large",1,"dad_unk",4,NA,32
+"CHR_95_2","2850-57731","2850-57650","CHR","CHR","CHR-032","CHR-025",2,"large",1,"ep_same",3,32,32
+"CHR_95_2","2850-57881","2850-57650","CHR","CHR","CHR-025","CHR-025",2,"large",2,"wp",3,32,32
+"CHR_96_1","2850-57808","2850-57568","CHR","CHR","CHR-029","CHR-096",1,"large",4,"ep_same",4,32,32
+"CHR_96_2","2640-97589","2850-57568","CHR","CHR","CHR-102","CHR-096",2,"large",1,"ep_same",3,32,32
+"CHR_96_2","2850-57570","2850-57568","CHR","CHR","CHR-133","CHR-096",2,"large",2,"ep_same",3,32,32
+"CHR_97_1","2850-57589","2850-57583","CHR","CHR","CHR-097","CHR-097",1,"large",4,"wp",4,32,32
+"CHR_99_1","2850-57578","2850-57883","CHR","CHR","CHR-099","CHR-099",1,"large",4,"wp",4,32,32
+"CHR_99_2","2640-97589","2850-57883","CHR","CHR","CHR-102","CHR-099",2,"large",2,"ep_same",4,32,32
+"CHR_99_2","2850-57578","2850-57883","CHR","CHR","CHR-099","CHR-099",2,"large",2,"wp",4,32,32
+"Cathy's_2_2","2850-57666","2850-57667","Cathy's","Cathy's","Cathys-02","Cathys-02",2,"solitary",1,"wp",1,1,1
+"Cook's_13_1","2850-57675",NA,"Cooks",NA,"Cooks-13",NA,1,"medium",4,"mom_unk",4,9,NA
+"Cook's_14_2","2850-57573","2850-57663","Cooks","Cooks","Cooks-31","Cooks-31",2,"medium",4,"wp",4,9,9
+"Cook's_17_1","2850-57673","2850-57672","Cooks","Cooks","Cooks-17","Cooks-17",1,"medium",2,"wp",4,9,9
+"Cook's_17_1",NA,"2850-57672",NA,"Cooks",NA,"Cooks-17",1,"medium",2,"dad_unk",4,NA,9
+"Cook's_27_1","2850-57673","2850-57664","Cooks","Cooks","Cooks-17","Cooks-27",1,"medium",1,"ep_same",3,9,9
+"Cook's_27_1","2850-57676","2850-57664","Cooks","Cooks","Cooks-27","Cooks-27",1,"medium",2,"wp",3,9,9
+"Cook's_29_1","2850-57619","2850-57853","Reinarz","Cooks","none","Cooks-29",1,"medium",2,"ep_diff",5,1,9
+"Cook's_29_1","2850-57638","2850-57853","Cooks","Cooks","Cooks-29","Cooks-29",1,"medium",2,"wp",5,9,9
+"Cook's_29_1",NA,"2850-57853",NA,"Cooks",NA,"Cooks-29",1,"medium",1,"dad_unk",5,NA,9
+"Cook's_2_1","2850-57633","2850-57637","Cooks","Cooks","Cooks-02","Cooks-02",1,"medium",1,"wp",1,9,9
+"Cook's_31_1","2850-57573","2850-57663","Cooks","Cooks","Cooks-31","Cooks-31",1,"medium",3,"wp",3,9,9
+"Cook's_33_1","2870-64915","2850-57700","Cooks","Cooks","Cooks-33","Cooks-33",1,"medium",4,"wp",4,9,9
+"Cook's_4_1","2850-57574","2850-57575","Cooks","Cooks","Cooks-04","Cooks-04",1,"medium",2,"wp",4,9,9
+"Cook's_4_1",NA,"2850-57575",NA,"Cooks",NA,"Cooks-04",1,"medium",2,"dad_unk",4,NA,9
+"Cook's_6_1",NA,"2850-57609",NA,"Cooks",NA,"Cooks-06",1,"medium",5,"dad_unk",5,NA,9
+"Cook's_8_2","2850-57633","2850-57853","Cooks","Cooks","Cooks-02","Cooks-29",2,"medium",2,"ep_same",5,9,9
+"Cook's_8_2","2850-57638","2850-57853","Cooks","Cooks","Cooks-29","Cooks-29",2,"medium",3,"wp",5,9,9
+"Dome House_1_1","2850-57643","2811-83207","Dome House","Dome House","DomeHouse-01","DomeHouse-01",1,"solitary",2,"wp",2,1,1
+"Dome House_2_2",NA,"2811-83207",NA,"Dome House",NA,"DomeHouse-01",2,"solitary",2,"dad_unk",2,NA,1
+"Karen's_1.2_2","2850-57662","2850-57661","Karen's","Karen's","Karens-01","Karens-01",2,"solitary",3,"wp",3,1,1
+"Make Believe_13_1","2850-57877","2850-57878","Make Believe","Make Believe","MakeBelieve-13","MakeBelieve-13",1,"medium",3,"wp",3,7,7
+"Make Believe_14_1","2350-21085","2850-57576","Make Believe","Make Believe","MakeBelieve-73","MakeBelieve-14",1,"medium",1,"ep_same",4,7,7
+"Make Believe_14_1","2850-57518","2850-57576","Make Believe","Make Believe","MakeBelieve-14","MakeBelieve-14",1,"medium",3,"wp",4,7,7
+"Make Believe_26_1","2350-21085","2850-57872","Make Believe","Make Believe","MakeBelieve-73","MakeBelieve-26",1,"medium",3,"ep_same",4,7,7
+"Make Believe_26_1","2850-57518","2850-57872","Make Believe","Make Believe","MakeBelieve-14","MakeBelieve-26",1,"medium",1,"ep_same",4,7,7
+"Make Believe_34_1","2350-21085","2850-57635","Make Believe","Make Believe","MakeBelieve-73","MakeBelieve-38",1,"medium",1,"ep_same",4,7,7
+"Make Believe_34_1","2850-57518","2850-57635","Make Believe","Make Believe","MakeBelieve-14","MakeBelieve-38",1,"medium",1,"ep_same",4,7,7
+"Make Believe_34_1","2850-57668","2850-57635","Make Believe","Make Believe","MakeBelieve-38","MakeBelieve-38",1,"medium",2,"wp",4,7,7
+"Make Believe_38_2","2350-21085","2850-57635","Make Believe","Make Believe","MakeBelieve-73","MakeBelieve-38",2,"medium",3,"ep_same",4,7,7
+"Make Believe_38_2","2850-57668","2850-57635","Make Believe","Make Believe","MakeBelieve-38","MakeBelieve-38",2,"medium",1,"wp",4,7,7
+"Make Believe_48_2","2850-57873","2850-57872","Make Believe","Make Believe","MakeBelieve-26","MakeBelieve-26",2,"medium",4,"wp",4,7,7
+"Make Believe_69_2","2850-57518","2850-57576","Make Believe","Make Believe","MakeBelieve-14","MakeBelieve-14",2,"medium",2,"wp",2,7,7
+"Make Believe_73_1","2350-21085","2640-97596","Make Believe","Make Believe","MakeBelieve-73","MakeBelieve-73",1,"medium",5,"wp",5,7,7
+"Make Believe_73_2","2350-21085","2640-97596","Make Believe","Make Believe","MakeBelieve-73","MakeBelieve-73",2,"medium",2,"wp",5,7,7
+"Make Believe_73_2",NA,"2640-97596",NA,"Make Believe",NA,"MakeBelieve-73",2,"medium",3,"dad_unk",5,NA,7
+"Make Believe_8_1","2350-21085","2850-57874","Make Believe","Make Believe","MakeBelieve-73","MakeBelieve-08",1,"medium",1,"ep_same",2,7,7
+"Make Believe_8_1","2850-57875","2850-57874","Make Believe","Make Believe","MakeBelieve-08","MakeBelieve-08",1,"medium",1,"wp",2,7,7
+"Marte's_2_2","2850-57691","2850-57692","Marte's","Marte's","Marty-01","Marty-01",2,"solitary",3,"wp",3,1,1
+"Marty's_1_1","2850-57691","2850-57692","Marte's","Marte's","Marty-01","Marty-01",1,"solitary",3,"wp",3,1,1
+"Mary Ann's_1_2","2870-64916","2850-57550","Mary Ann's","Mary Ann's","MaryAnns-01","MaryAnns-01",2,"solitary",3,"wp",3,1,1
+"McCauley_1_1","2850-57639","2850-57640","McCauley","McCauley","McCauley-01","McCauley-01",1,"small",2,"wp",2,2,2
+"McCauley_2_2","2850-57752","2850-57640","McCauley","McCauley","McCauley-04","McCauley-01",2,"small",4,"ep_same",4,2,2
+"McCauley_4_1","2850-57752","2850-57753","McCauley","McCauley","McCauley-04","McCauley-04",1,"small",4,"wp",4,2,2
+"Speedwell_1_1","2850-57699","2850-57698","Speedwell","Speedwell","Speedwell-01","Speedwell-01",1,"solitary",2,"wp",4,1,1
+"Speedwell_1_1",NA,"2850-57698",NA,"Speedwell",NA,"Speedwell-01",1,"solitary",2,"dad_unk",4,NA,1
+"Struther's_10_1","2850-57552","2850-57551","Struthers","Struthers","Struthers-10","Struthers-10",1,"small",4,"wp",5,3,3
+"Struther's_10_1",NA,"2850-57551",NA,"Struthers",NA,"Struthers-10",1,"small",1,"dad_unk",5,NA,3
+"Struther's_20_2","2850-57552","2850-57551","Struthers","Struthers","Struthers-10","Struthers-10",2,"small",4,"wp",5,3,3
+"Struther's_20_2",NA,"2850-57551",NA,"Struthers",NA,"Struthers-10",2,"small",1,"dad_unk",5,NA,3
+"Struther's_3_2",NA,"2850-57645",NA,"Struthers",NA,"Struthers-03",2,"small",4,"dad_unk",4,NA,3
+"Urban Farm_2_1","2850-57643","2850-57608","Dome House","Urban Farm Girlz","DomeHouse-01","UrbanFarm-02",1,"small",1,"ep_diff",3,1,2
+"Urban Farm_2_1","2850-57899","2850-57608","Urban Farm Girlz","Urban Farm Girlz","UrbanFarm-02","UrbanFarm-02",1,"small",2,"wp",3,2,2
+"Urban Farm_8_1","2850-57868","2850-57629","Urban Farm Girlz","Urban Farm Girlz","UrbanFarm-08","UrbanFarm-08",1,"small",3,"wp",3,2,2
+"Urban Farm_8_2","2850-57868","2850-57629","Urban Farm Girlz","Urban Farm Girlz","UrbanFarm-08","UrbanFarm-08",2,"small",1,"wp",4,2,2
+"Urban Farm_8_2",NA,"2850-57629",NA,"Urban Farm Girlz",NA,"UrbanFarm-08",2,"small",3,"dad_unk",4,NA,2
