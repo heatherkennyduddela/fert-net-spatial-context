@@ -15,12 +15,10 @@ Article authors: Heather V. Kenny-Duddela, Drew R. Schield, Zachary M. Laubach, 
 The steps described require the following software: 
 
 
-
-\* R and RStudio
-
+* R and RStudio
 
 
-\## Contents
+## Contents
 
 
 
