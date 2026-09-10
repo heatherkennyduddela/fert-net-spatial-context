@@ -24,15 +24,6 @@ The steps described require the following software:
 
 ## Contents
 
-* [01\_paternity-assignment](#01_paternity-assignment)
-* [02\_timing-and-synchrony](#02_timing-and-synchrony)
-* [03\_make-full-data-table](#03_make-full-data-table)
-* [04\_exploratory-plots](#04_exploratory-plots)
-* [05\_distance-intx-categorical](#05_distance-intx-categorical)
-* [06\_explore-temporal-overlap](#06_explore-temporal-overlap)
-* [07\_between-site-ferts](#07_between-site-ferts)
-* [08\_within-site-ferts](#08_between-site-ferts)
-
 
 
 ### 01 paternity assignment
